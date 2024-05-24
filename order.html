@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprouts Mart-Order</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <section class="navbar-section">
+              <h1 class="navbar-title">SPROUTS <span class="mart">mart</span></h1>
+                <ul class="navbar-list">
+                    <li><a href="home.html" class="navbar-link">Home</a></li>
+                    <li><a href="about us.html" class="navbar-link">About Us</a></li>
+                    <li><a href="dairy products.html" class="navbar-link">Dairy Products</a></li>
+                    <li><a href="vegetables.html" class="navbar-link">Vegetables</a></li>
+                    <li><a href="cosmetics.html" class="navbar-link">Cosmetics</a></li>
+                    <li><a href="order.html" class="navbar-link">Order</a></li>
+                    <li><a href="loyalty.html" class="navbar-link">Loyalty Registration</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+              <optgroup label="Vegetables">
+                
+                <option value="foundation">carrot</option>
+                <option value="beans">beans</option>
+                <option value="pumkin">pumkin</option>
+              </optgroup>
+              <optgroup label="Cosmetics">
+                <option value="eyeshadow">Eyeshadow</option>
+                <option value="blush">Blush</option>
+              </optgroup>
+              <optgroup label="Dairyproducts">
+                <option value="milk">Milk</option>
+                <option value="cheese">Cheese</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+          </div>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="name" name="name" required>
+       
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="ABC123@gmail.com" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address"placeholder="No:123,Dehiwala Rd" name="address" rows="4" required></textarea>
+          </div>
+          <button class="order-button" onclick="location.href='order.html';">Submit</button>
+        </form>
+      </div>
+
+
+
+    <footer >
+        <p>&copy; 2024 Sprouts Mart. All rights reserved. | Created by Jerome</p>
+    </footer>
+
+</body>
+</html>
